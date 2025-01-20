@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { View, Text, Button, FlatList, StyleSheet, Alert } from "react-native";
 import axios from "axios";
+import AdminMenubar from '../../components/AdminMenuBar';
 
 const AdminDashboard = ({ navigation }) => {
   const [books, setBooks] = useState([]);
@@ -93,6 +94,7 @@ const AdminDashboard = ({ navigation }) => {
           disabled={currentPage === Math.ceil(books.length / itemsPerPage)}
         />
       </View>
+      <AdminMenubar />
     </View>
   );
 };

@@ -10,6 +10,8 @@ import Login from "./screens/Login";
 import Register from "./screens/Register";
 import AdminDashboard from './screens/Admin/AdminDashboard'; // Adjust the path as needed
 import CreateEditBook from './screens/Admin/CreateEditBook';
+import UserController from './screens/Admin/UserController';
+
 import BookDescription from './screens/User/BookDescription';
 import BookList from './screens/User/BookList';
 import BookRecommendation from './screens/User/BookRecommendation';
@@ -66,6 +68,8 @@ const App = () => {
 
         <Stack.Screen name="AdminDashboard" component={AdminDashboard} />
         <Stack.Screen name="CreateEditBook" component={CreateEditBook} />
+        <Stack.Screen name="UserController" component={UserController} />
+
         <Stack.Screen name="BookRecommendation" component={BookRecommendation} />
         <Stack.Screen name="BookReview" component={BookReview} />
         <Stack.Screen name="SearchScreen" component={SearchScreen} />

@@ -42,8 +42,9 @@ const WatchlistScreen = () => {
       <View style={styles.content}>
         <BookSwipe books={books} />
       </View>
-      <Menubar />
+      
     </View>
+    <Menubar />
     </GestureHandlerRootView>
 
   );
