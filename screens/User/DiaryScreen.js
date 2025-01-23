@@ -21,7 +21,7 @@ const DiaryScreen = () => {
     const fetchBooks = async () => {
       if (jwtToken) {
         try {
-          const response = await fetch('https://localhost:5000/api/Book/read', {
+          const response = await fetch('https://try2hamrakitab-e6byc3drhtbxcvhy.southeastasia-01.azurewebsites.net/api/Book/read', {
             headers: {
               Authorization: `Bearer ${jwtToken}`,
               Accept: 'application/json',

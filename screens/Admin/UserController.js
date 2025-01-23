@@ -20,7 +20,7 @@ const UserController = () => {
   const [error, setError] = useState(null);
   const [authToken, setAuthToken] = useState(null);
 
-  const BASE_URL = 'https://localhost:5000/api';
+  const BASE_URL = 'https://try2hamrakitab-e6byc3drhtbxcvhy.southeastasia-01.azurewebsites.net/api';
 
   useEffect(() => {
     initializeAuth();

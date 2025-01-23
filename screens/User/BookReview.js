@@ -28,7 +28,7 @@ const BookReview = () => {
   useEffect(() => {
     if (!token) return;
 
-    fetch('https://localhost:5000/api/Review', {
+    fetch('https://try2hamrakitab-e6byc3drhtbxcvhy.southeastasia-01.azurewebsites.net/api/Review', {
       headers: {
         'Authorization': `Bearer ${token}`,
         'accept': 'text/plain'

@@ -25,7 +25,7 @@ const YourActivityScreen = () => {
 
   const fetchActivities = async (userId) => {
     try {
-      const response = await fetch(`https://localhost:5000/api/Activity/user/${userId}?page=1&pageSize=10`, {
+      const response = await fetch(`https://try2hamrakitab-e6byc3drhtbxcvhy.southeastasia-01.azurewebsites.net/api/Activity/user/${userId}?page=1&pageSize=10`, {
         headers: {
           'accept': 'application/json',
         },

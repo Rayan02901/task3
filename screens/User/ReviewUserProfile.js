@@ -53,7 +53,7 @@ const ReviewUserProfile = ({ route, navigation }) => {
     }
     
     try {
-      const response = await fetch(`https://localhost:5000/api/FriendRequest?recipientId=${recipientId}`, {
+      const response = await fetch(`https://try2hamrakitab-e6byc3drhtbxcvhy.southeastasia-01.azurewebsites.net/api/FriendRequest?recipientId=${recipientId}`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,

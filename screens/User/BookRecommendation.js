@@ -17,7 +17,7 @@ const BookRecommendation = ({ navigation }) => {
       try {
         const userData = await getUserData();
         if (userData && userData.userId) {
-          const response = await fetch(`https://localhost:5000/api/Recommendation/user/${userData.userId}`);
+          const response = await fetch(`https://try2hamrakitab-e6byc3drhtbxcvhy.southeastasia-01.azurewebsites.net/api/Recommendation/user/${userData.userId}`);
           const result = await response.json();
 
           if (response.ok) {

@@ -55,7 +55,7 @@ const CreateEditBook = ({ route, navigation }) => {
         price: book.price,
       };
 
-      const url = `https://localhost:5000/api/Book${isEdit ? `/${book.id}` : ""}`;
+      const url = `https://try2hamrakitab-e6byc3drhtbxcvhy.southeastasia-01.azurewebsites.net/api/Book${isEdit ? `/${book.id}` : ""}`;
 
       if (isEdit) {
         await axios.put(url, requestData, { headers });
@@ -85,7 +85,7 @@ const CreateEditBook = ({ route, navigation }) => {
       };
 
       // Directly send delete request
-      await axios.delete(`https://localhost:5000/api/Book/${book.id}`, { headers });
+      await axios.delete(`https://try2hamrakitab-e6byc3drhtbxcvhy.southeastasia-01.azurewebsites.net/api/Book/${book.id}`, { headers });
       Alert.alert("Success", "Book deleted successfully");
       navigation.goBack(); // Navigate back to the previous screen
     } catch (error) {

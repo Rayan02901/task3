@@ -11,7 +11,7 @@ const AdminDashboard = ({ navigation }) => {
 
   const fetchBooks = async () => {
     try {
-      const response = await axios.get(`https://localhost:5000/api/Book`);
+      const response = await axios.get(`https://try2hamrakitab-e6byc3drhtbxcvhy.southeastasia-01.azurewebsites.net/api/Book`);
       setBooks(response.data); // Assuming API returns a full array of books
       paginateBooks(response.data, 1); // Display first page initially
     } catch (error) {
@@ -52,7 +52,7 @@ const AdminDashboard = ({ navigation }) => {
   const handleDelete = async (bookId) => {
     try {
       // Send DELETE request
-      await axios.delete(`https://localhost:5000/api/Book/${bookId}`);
+      await axios.delete(`https://try2hamrakitab-e6byc3drhtbxcvhy.southeastasia-01.azurewebsites.net/api/Book/${bookId}`);
       const updatedBooks = books.filter((book) => book.id !== bookId);
       setBooks(updatedBooks);
       paginateBooks(updatedBooks, currentPage);

@@ -13,7 +13,7 @@ const Register = () => {
   const handleRegister = async () => {
     if (userName && email && password) {
       try {
-        const response = await fetch('https://localhost:5000/api/Auth/register', {
+        const response = await fetch('https://try2hamrakitab-e6byc3drhtbxcvhy.southeastasia-01.azurewebsites.net/api/Auth/register', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

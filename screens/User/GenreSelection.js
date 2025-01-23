@@ -22,7 +22,7 @@ const GenreSelection = ({ navigation }) => {
 
   const fetchGenres = async () => {
     try {
-      const response = await fetch('https://localhost:5000/api/Genre', {
+      const response = await fetch('https://try2hamrakitab-e6byc3drhtbxcvhy.southeastasia-01.azurewebsites.net/api/Genre', {
         headers: {
           'Accept': 'application/json',
           'Authorization': 'Bearer YOUR_TOKEN_HERE', // Replace with your token

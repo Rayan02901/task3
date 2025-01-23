@@ -27,7 +27,7 @@ const FriendsActivityScreen = () => {
 
   const fetchActivities = async (userId, page) => {
     try {
-      const response = await fetch(`https://localhost:5000/api/FriendActivities/user/${userId}?page=${page}`, {
+      const response = await fetch(`https://try2hamrakitab-e6byc3drhtbxcvhy.southeastasia-01.azurewebsites.net/api/FriendActivities/user/${userId}?page=${page}`, {
         headers: {
           'accept': 'application/json',
         },

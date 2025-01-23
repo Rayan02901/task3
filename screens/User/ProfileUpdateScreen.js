@@ -16,7 +16,7 @@ const ProfileUpdateScreen = () => {
   const handleUpdateProfile = async () => {
     try {
       const { jwtToken } = await getUserData();
-      const response = await fetch('https://localhost:5000/api/UserProfile', {
+      const response = await fetch('https://try2hamrakitab-e6byc3drhtbxcvhy.southeastasia-01.azurewebsites.net/api/UserProfile', {
         method: 'PUT',
         headers: {
           Authorization: `Bearer ${jwtToken}`,

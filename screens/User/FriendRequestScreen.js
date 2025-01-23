@@ -19,7 +19,7 @@ const FriendRequestScreen = ({ navigation }) => {
         if (userData) {
           setToken(userData.jwtToken);
           try {
-            const response = await fetch('https://localhost:5000/api/FriendRequest', {
+            const response = await fetch('https://try2hamrakitab-e6byc3drhtbxcvhy.southeastasia-01.azurewebsites.net/api/FriendRequest', {
               headers: {
                 'Authorization': `Bearer ${userData.jwtToken}`,
                 'Accept': 'application/json',

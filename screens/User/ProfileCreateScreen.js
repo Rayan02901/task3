@@ -21,7 +21,7 @@ const ProfileCreateScreen = () => {
       formData.append('Bio', bio);
       // Add Photo if you have an image file to upload, e.g., formData.append('Photo', { uri: photoUri, name: 'photo.jpg', type: 'image/jpeg' });
 
-      const response = await fetch('https://localhost:5000/api/UserProfile', {
+      const response = await fetch('https://try2hamrakitab-e6byc3drhtbxcvhy.southeastasia-01.azurewebsites.net/api/UserProfile', {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${jwtToken}`,

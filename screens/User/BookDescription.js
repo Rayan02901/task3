@@ -34,7 +34,7 @@ const BookDescription = ({ route, navigation }) => {
 
   const fetchBookDetails = async () => {
     try {
-      const response = await fetch(`https://localhost:5000/api/Book/${bookId}`);
+      const response = await fetch(`https://try2hamrakitab-e6byc3drhtbxcvhy.southeastasia-01.azurewebsites.net/api/Book/${bookId}`);
       const data = await response.json();
       setBook(data);
       setLoading(false);
@@ -53,7 +53,7 @@ const BookDescription = ({ route, navigation }) => {
         return;
       }
 
-      const response = await fetch(`https://localhost:5000/api/Review/book/${bookId}`, {
+      const response = await fetch(`https://try2hamrakitab-e6byc3drhtbxcvhy.southeastasia-01.azurewebsites.net/api/Review/book/${bookId}`, {
         method: 'POST',
         headers: {
           'Accept': 'text/plain',
@@ -89,7 +89,7 @@ const BookDescription = ({ route, navigation }) => {
         return;
       }
 
-      const response = await fetch('https://localhost:5000/api/Activity', {
+      const response = await fetch('https://try2hamrakitab-e6byc3drhtbxcvhy.southeastasia-01.azurewebsites.net/api/Activity', {
         method: 'POST',
         headers: {
           'Accept': 'text/plain',
